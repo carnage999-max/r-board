@@ -91,6 +91,7 @@ export default function GalleryProvider({ images, children }: GalleryProviderPro
   const value = { images, openAt };
 
   const activeImage = activeIndex === null ? null : images[activeIndex];
+  const currentIndex = activeIndex ?? 0;
 
   return (
     <GalleryContext.Provider value={value}>
@@ -110,7 +111,7 @@ export default function GalleryProvider({ images, children }: GalleryProviderPro
           <div className="relative z-10 mx-auto w-[min(92vw,1100px)]">
             <div className="flex items-center justify-between text-xs uppercase tracking-[0.3em] text-white/60">
               <span>
-                Image {activeIndex + 1} of {images.length}
+                Image {currentIndex + 1} of {images.length}
               </span>
               <button
                 type="button"

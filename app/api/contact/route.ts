@@ -130,7 +130,7 @@ export async function POST(request: Request) {
   const { error } = await resend.emails.send({
     from: `R-Board <${FROM_EMAIL}>`,
     to: [contactTo],
-    reply_to: safeEmail,
+    replyTo: safeEmail,
     subject: SUBJECT,
     text,
     html: buildHtml({
