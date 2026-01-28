@@ -2,8 +2,17 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="section-tight border-t border-white/5">
-      <div className="container flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+    <footer className="section-tight relative overflow-hidden border-t border-white/5">
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: "url(/textures/wood.png)" }}
+        aria-hidden="true"
+      />
+      <div
+        className="absolute inset-0 bg-[rgba(9,16,22,0.78)]"
+        aria-hidden="true"
+      />
+      <div className="container relative z-10 flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
         <div className="flex items-center gap-3">
           <Image
             src="/brand/r-board.png"

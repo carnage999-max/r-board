@@ -182,6 +182,25 @@ img {
   animation: grain-drift 26s ease-in-out infinite;
 }
 
+.nav-scroll {
+  scrollbar-color: rgba(122, 84, 57, 0.7) rgba(15, 20, 26, 0.4);
+  scrollbar-width: thin;
+}
+
+.nav-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.nav-scroll::-webkit-scrollbar-track {
+  background: rgba(15, 20, 26, 0.4);
+  border-radius: 999px;
+}
+
+.nav-scroll::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, var(--wood-0), var(--wood-2));
+  border-radius: 999px;
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(14px);

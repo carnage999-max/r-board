@@ -44,7 +44,7 @@ export default function Navbar() {
           />
           <span className="text-sm font-semibold tracking-wide">R-Board®</span>
         </a>
-        <div className="flex items-center gap-4 overflow-x-auto pb-1 text-sm font-medium tracking-wide text-[var(--text-muted)] md:pb-0 md:text-xs">
+        <div className="nav-scroll flex items-center gap-4 overflow-x-auto pb-1 text-sm font-medium tracking-wide text-[var(--text-muted)] md:pb-0 md:text-xs">
           {links.map((link) => (
             <a
               key={link.href}

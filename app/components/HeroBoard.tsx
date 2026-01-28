@@ -14,7 +14,7 @@ export default function HeroBoard({ galleryIndex }: HeroBoardProps) {
         <Reveal>
           <div className="relative overflow-hidden rounded-[28px] border border-white/10 bg-[#141a21]/70 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.05),0_40px_80px_rgba(0,0,0,0.45)]">
             <Image
-              src="/textures/wood.png"
+              src="/actual-r-board.png"
               alt="Walnut wood texture"
               fill
               className="object-cover wood-grain"
@@ -65,7 +65,7 @@ export default function HeroBoard({ galleryIndex }: HeroBoardProps) {
                       sizes="(min-width: 1024px) 40vw, 100vw"
                     />
                   </GalleryTrigger>
-                  <p className="mt-4 text-sm text-[var(--text-muted)]">
+                  <p className="mt-4 text-sm text-white]">
                     Engineered recycled rubber composite panel.
                   </p>
                 </div>
