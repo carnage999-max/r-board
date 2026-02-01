@@ -35,7 +35,7 @@ export default function Navbar() {
       <div className="container flex flex-col gap-3 py-4 md:flex-row md:items-center md:justify-between">
         <a href="#hero" className="flex items-center gap-3">
           <Image
-            src="/brand/r-board.png"
+            src="/brand/rboard-new-logo.png"
             alt="R-Board logo"
             width={36}
             height={36}

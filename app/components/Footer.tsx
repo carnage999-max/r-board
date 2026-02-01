@@ -15,7 +15,7 @@ export default function Footer() {
       <div className="container relative z-10 flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
         <div className="flex items-center gap-3">
           <Image
-            src="/brand/r-board.png"
+            src="/brand/rboard-new-logo.png"
             alt="R-Board logo"
             width={32}
             height={32}
@@ -31,7 +31,16 @@ export default function Footer() {
           </div>
         </div>
         <div className="space-y-2 text-xs text-[var(--text-muted)]">
-          <p>Email: partners@r-board.com</p>
+          <p>
+            Mailing Address:
+
+            PO Box 52,
+            Detroit, ME 04929
+          </p>
+          <p>
+            Phone:207-947-1999
+          </p>
+          <p>Email: info@r-boards.com</p>
           <p>© 2024 R-Board®. All rights reserved.</p>
         </div>
       </div>

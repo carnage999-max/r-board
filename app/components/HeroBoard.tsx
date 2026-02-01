@@ -58,7 +58,7 @@ export default function HeroBoard({ galleryIndex }: HeroBoardProps) {
                     className="relative aspect-[4/5] overflow-hidden rounded-2xl"
                   >
                     <Image
-                      src="/media/rboard-mark-monolith.jpg"
+                      src="/brand/rboard-new-logo.png"
                       alt="R-Board brand monolith"
                       fill
                       className="object-cover"
