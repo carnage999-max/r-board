@@ -44,6 +44,99 @@ const galleryImages: GalleryImage[] = [
   },
 ];
 
+const standardPanelSizes = [
+  "4 ft × 8 ft",
+  "4 ft × 9 ft",
+  "4 ft × 10 ft",
+  "4 ft × 12 ft",
+];
+
+const availableThicknesses = ["½ inch", "⅝ inch", "¾ inch", "1 inch"];
+
+const simpleInstallationSteps = [
+  "Cut with standard circular saws",
+  "Fasten using conventional nails and screws",
+  "Install using existing framing methods",
+  "Finish using conventional siding systems",
+  "Install with standard crews",
+];
+
+const wallAssembly = [
+  "Exterior Cladding",
+  "Ventilated Rain Screen",
+  "Water-Resistive Barrier (WRB)",
+  "R-Board®️ Structural Sheathing",
+  "2×6 Stud Wall",
+  "R-19 Fiberglass or Mineral Wool Insulation",
+  "Interior Vapor Control Layer (where required by code)",
+  "Drywall",
+];
+
+const airBarrierBenefits = [
+  "Continuous air sealing",
+  "Moisture protection",
+  "Wind resistance",
+  "Reduced thermal leakage",
+  "Improved acoustic sealing",
+];
+
+const sustainableManufacturingSteps = [
+  "Cleaned",
+  "Processed",
+  "Size-classified",
+  "Fully encapsulated inside the composite panel",
+];
+
+const residentialBenefits = [
+  "Quieter living spaces",
+  "Reduced outside traffic noise",
+  "Better sleep",
+  "Improved comfort",
+  "Lower heating and cooling costs",
+  "Improved durability",
+  "Environmentally responsible construction",
+];
+
+const commercialBenefits = [
+  "Improved Sound Transmission Class (STC) performance",
+  "Better occupant privacy",
+  "Reduced vibration transmission",
+  "Lower operating costs",
+  "Sustainable building initiatives",
+  "Enhanced occupant comfort",
+];
+
+const plannedTesting = [
+  "Structural performance",
+  "Fire performance",
+  "Surface burning characteristics",
+  "Air leakage",
+  "Water penetration",
+  "Sound transmission",
+  "Thermal performance",
+  "Long-term durability",
+];
+
+const whyBuildersLikeRBoard = [
+  "Same framing methods.",
+  "Same tools.",
+  "Same installation process.",
+  "Better performance.",
+  "Less noise.",
+  "Better energy efficiency.",
+  "Greater durability.",
+  "More sustainable construction.",
+];
+
+const recycledTireBenefits = [
+  "It absorbs vibration.",
+  "It reduces sound transmission.",
+  "It helps interrupt thermal bridging.",
+  "It resists moisture better than wood.",
+  "It improves impact resistance.",
+  "It keeps millions of tires out of landfills.",
+];
+
 export default function Home() {
   return (
     <GalleryProvider images={galleryImages}>
@@ -238,6 +331,309 @@ export default function Home() {
                   <GlassCard className="px-6 py-6" accent="top">
                     <p className="text-base text-[var(--text-muted)]">
                       R-Board® converts end-of-life tires into high-performance structural panels for walls, floors, and roofs.
+                    </p>
+                  </GlassCard>
+                </div>
+              </div>
+            </Reveal>
+          </div>
+        </section>
+
+        <section id="engineering" className="section">
+          <div className="container">
+            <Reveal>
+              <div className="space-y-12">
+                <SectionHeader title="Engineering & Building Science" />
+
+                <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
+                  <div className="space-y-6">
+                    <h3 className="text-2xl font-semibold tracking-tight text-[var(--text-primary)]">
+                      Engineered for Real-World Construction
+                    </h3>
+                    <p className="max-w-[68ch] text-base text-[var(--text-muted)]">
+                      R-Board®️ was designed to fit seamlessly into today’s building
+                      practices. It installs using conventional framing methods while
+                      providing additional benefits in sound reduction, thermal
+                      performance, durability, and sustainability.
+                    </p>
+                    <p className="max-w-[68ch] text-base text-[var(--text-muted)]">
+                      Unlike specialty building systems that require new installation
+                      methods or specialized tools, R-Board®️ is engineered to work
+                      with the products and practices builders already know.
+                    </p>
+                  </div>
+                  <GlassCard className="px-6 py-6" accent="top">
+                    <p className="text-sm text-[var(--text-muted)]">
+                      Unlike specialty building systems that require new installation
+                      methods or specialized tools, R-Board®️ is engineered to work
+                      with the products and practices builders already know.
+                    </p>
+                  </GlassCard>
+                </div>
+
+                <div className="space-y-6">
+                  <h3 className="text-2xl font-semibold tracking-tight text-[var(--text-primary)]">
+                    Standard Panel Sizes
+                  </h3>
+                  <p className="max-w-[68ch] text-base text-[var(--text-muted)]">
+                    R-Board®️ will be manufactured in industry-standard dimensions to
+                    simplify adoption.
+                  </p>
+                  <div className="grid gap-6 md:grid-cols-2">
+                    <GlassCard className="px-6 py-6" accent="top">
+                      <div className="space-y-4">
+                        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[rgba(255,255,255,0.55)]">
+                          Standard Panel Sizes
+                        </p>
+                        <ul className="space-y-3 text-sm text-[var(--text-primary)]">
+                          {standardPanelSizes.map((size) => (
+                            <li key={size}>{size}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    </GlassCard>
+                    <GlassCard className="px-6 py-6" accent="bottom">
+                      <div className="space-y-4">
+                        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[rgba(255,255,255,0.55)]">
+                          Available Thicknesses
+                        </p>
+                        <ul className="space-y-3 text-sm text-[var(--text-primary)]">
+                          {availableThicknesses.map((thickness) => (
+                            <li key={thickness}>{thickness}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    </GlassCard>
+                  </div>
+                  <p className="max-w-[68ch] text-base text-[var(--text-muted)]">
+                    Additional custom thicknesses and specialty panels will be
+                    available for commercial and industrial applications.
+                  </p>
+                </div>
+
+                <div className="grid gap-6 lg:grid-cols-[1fr_1fr]">
+                  <GlassCard className="px-6 py-6" accent="top">
+                    <div className="space-y-5">
+                      <h3 className="text-2xl font-semibold tracking-tight text-[var(--text-primary)]">
+                        Simple Installation
+                      </h3>
+                      <p className="text-base text-[var(--text-muted)]">
+                        Installing R-Board®️ requires no specialized equipment.
+                      </p>
+                      <p className="text-sm text-[var(--text-primary)]">
+                        Builders can:
+                      </p>
+                      <ul className="space-y-3 text-sm text-[var(--text-primary)]">
+                        {simpleInstallationSteps.map((step) => (
+                          <li key={step}>{step}</li>
+                        ))}
+                      </ul>
+                      <div className="space-y-2 text-sm text-[var(--text-primary)]">
+                        <p>No retraining required.</p>
+                        <p>No proprietary hardware required.</p>
+                        <p>No special fasteners required.</p>
+                      </div>
+                    </div>
+                  </GlassCard>
+
+                  <GlassCard className="px-6 py-6" accent="bottom">
+                    <div className="space-y-5">
+                      <h3 className="text-2xl font-semibold tracking-tight text-[var(--text-primary)]">
+                        Recommended Wall Assembly
+                      </h3>
+                      <p className="text-base text-[var(--text-muted)]">
+                        For northern climates such as Maine, R-Board®️ is designed
+                        to work as part of a complete high-performance wall
+                        assembly.
+                      </p>
+                      <p className="text-sm text-[var(--text-primary)]">
+                        Typical assembly:
+                      </p>
+                      <ul className="space-y-3 text-sm text-[var(--text-primary)]">
+                        {wallAssembly.map((layer) => (
+                          <li key={layer}>{layer}</li>
+                        ))}
+                      </ul>
+                      <p className="text-sm text-[var(--text-muted)]">
+                        This approach combines the structural, acoustic, and
+                        thermal advantages of R-Board®️ with conventional
+                        insulation systems to create an exceptionally efficient
+                        wall.
+                      </p>
+                    </div>
+                  </GlassCard>
+                </div>
+
+                <div className="grid gap-6 lg:grid-cols-[1fr_1fr]">
+                  <div className="space-y-6">
+                    <h3 className="text-2xl font-semibold tracking-tight text-[var(--text-primary)]">
+                      Air Barrier & Moisture Management
+                    </h3>
+                    <p className="max-w-[68ch] text-base text-[var(--text-muted)]">
+                      A building is only as efficient as its weakest seam.
+                    </p>
+                    <p className="max-w-[68ch] text-base text-[var(--text-muted)]">
+                      R-Board®️ is designed to integrate with industry-standard
+                      weather-resistant barrier systems and with R-Tape™️, our
+                      recycled elastomeric seam-sealing system.
+                    </p>
+                    <p className="text-sm text-[var(--text-primary)]">
+                      Together they provide:
+                    </p>
+                    <ul className="space-y-3 text-sm text-[var(--text-primary)]">
+                      {airBarrierBenefits.map((benefit) => (
+                        <li key={benefit}>{benefit}</li>
+                      ))}
+                    </ul>
+                    <p className="max-w-[68ch] text-base text-[var(--text-muted)]">
+                      The result is a tighter, quieter, and more energy-efficient
+                      building envelope.
+                    </p>
+                  </div>
+
+                  <div className="space-y-6">
+                    <h3 className="text-2xl font-semibold tracking-tight text-[var(--text-primary)]">
+                      Sustainable Manufacturing
+                    </h3>
+                    <p className="max-w-[68ch] text-base text-[var(--text-muted)]">
+                      Every R-Board®️ panel helps divert discarded vehicle tires
+                      from landfills.
+                    </p>
+                    <p className="text-sm text-[var(--text-primary)]">
+                      The recycled rubber is:
+                    </p>
+                    <ul className="space-y-3 text-sm text-[var(--text-primary)]">
+                      {sustainableManufacturingSteps.map((step) => (
+                        <li key={step}>{step}</li>
+                      ))}
+                    </ul>
+                    <GlassCard className="px-6 py-6" accent="top">
+                      <p className="text-sm text-[var(--text-muted)]">
+                        Because the recycled rubber is permanently encapsulated
+                        during manufacturing, it is not exposed and is
+                        engineered to minimize odor while delivering superior
+                        vibration damping and long-term durability.
+                      </p>
+                    </GlassCard>
+                  </div>
+                </div>
+
+                <div className="grid gap-6 lg:grid-cols-[1fr_1fr]">
+                  <GlassCard className="px-6 py-6" accent="top">
+                    <div className="space-y-5">
+                      <h3 className="text-2xl font-semibold tracking-tight text-[var(--text-primary)]">
+                        Residential Benefits
+                      </h3>
+                      <p className="text-sm text-[var(--text-primary)]">
+                        Homeowners experience:
+                      </p>
+                      <ul className="space-y-3 text-sm text-[var(--text-primary)]">
+                        {residentialBenefits.map((benefit) => (
+                          <li key={benefit}>{benefit}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </GlassCard>
+
+                  <GlassCard className="px-6 py-6" accent="bottom">
+                    <div className="space-y-5">
+                      <h3 className="text-2xl font-semibold tracking-tight text-[var(--text-primary)]">
+                        Commercial & Multi-Family Benefits
+                      </h3>
+                      <p className="text-base text-[var(--text-muted)]">
+                        Commercial buildings have different priorities.
+                      </p>
+                      <p className="text-sm text-[var(--text-primary)]">
+                        R-Board®️ is being engineered to support:
+                      </p>
+                      <ul className="space-y-3 text-sm text-[var(--text-primary)]">
+                        {commercialBenefits.map((benefit) => (
+                          <li key={benefit}>{benefit}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </GlassCard>
+                </div>
+
+                <div className="grid gap-6 lg:grid-cols-[1fr_1fr]">
+                  <div className="space-y-6">
+                    <h3 className="text-2xl font-semibold tracking-tight text-[var(--text-primary)]">
+                      Fire & Code Compliance
+                    </h3>
+                    <p className="max-w-[68ch] text-base text-[var(--text-muted)]">
+                      R-Board®️ is being engineered to meet applicable
+                      building-code requirements through third-party laboratory
+                      testing.
+                    </p>
+                    <p className="text-sm text-[var(--text-primary)]">
+                      Planned testing includes evaluation of:
+                    </p>
+                    <ul className="space-y-3 text-sm text-[var(--text-primary)]">
+                      {plannedTesting.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+                    <p className="max-w-[68ch] text-base text-[var(--text-muted)]">
+                      Performance data will be published as testing is
+                      completed.
+                    </p>
+                  </div>
+
+                  <GlassCard className="px-6 py-6" accent="top">
+                    <div className="space-y-5">
+                      <h3 className="text-2xl font-semibold tracking-tight text-[var(--text-primary)]">
+                        Why Builders Like R-Board®️
+                      </h3>
+                      <p className="text-base text-[var(--text-muted)]">
+                        R-Board®️ doesn’t ask builders to change the way they
+                        build.
+                      </p>
+                      <p className="text-base text-[var(--text-muted)]">
+                        Instead, it improves the materials they’re already using.
+                      </p>
+                      <p className="text-sm text-[var(--text-primary)]">
+                        The goal is simple:
+                      </p>
+                      <ul className="space-y-3 text-sm text-[var(--text-primary)]">
+                        {whyBuildersLikeRBoard.map((item) => (
+                          <li key={item}>{item}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </GlassCard>
+                </div>
+
+                <div className="space-y-6">
+                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[rgba(255,255,255,0.55)]">
+                    One recommendation I’d add
+                  </p>
+                  <h3 className="text-2xl font-semibold tracking-tight text-[var(--text-primary)]">
+                    Why Recycled Tires?
+                  </h3>
+                  <p className="max-w-[70ch] text-base text-[var(--text-muted)]">
+                    Explain that you’re not using recycled tires just because
+                    they’re recycled. You’re using them because rubber has
+                    engineering properties that wood alone doesn’t have:
+                  </p>
+                  <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                    {recycledTireBenefits.map((benefit) => (
+                      <GlassCard
+                        key={benefit}
+                        className="px-5 py-5"
+                        accent="top"
+                      >
+                        <p className="text-sm text-[var(--text-primary)]">
+                          {benefit}
+                        </p>
+                      </GlassCard>
+                    ))}
+                  </div>
+                  <GlassCard className="px-6 py-6" accent="bottom">
+                    <p className="max-w-[70ch] text-base text-[var(--text-muted)]">
+                      That changes the story from “green building product” to
+                      “better engineered building product that also happens to be
+                      sustainable.” I think that’s a much stronger message for
+                      builders, engineers, and investors alike.
                     </p>
                   </GlassCard>
                 </div>

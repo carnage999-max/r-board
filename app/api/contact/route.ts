@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const FROM_EMAIL = "info@nathanreardon.com";
+const FROM_EMAIL = "info@se7eninc.com";
 const SUBJECT = "R-Board Partnership Inquiry";
 const EMAIL_REGEX = /^\S+@\S+\.\S+$/;
 
