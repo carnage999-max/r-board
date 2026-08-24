@@ -42,6 +42,18 @@ export default function Footer() {
           </p>
           <p>Email: info@r-boards.com</p>
           <p>© 2024 R-Board®. All rights reserved.</p>
+          <p>
+            Part of the{" "}
+            <a
+              href="https://se7eninc.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-[var(--text-primary)] transition-colors"
+            >
+              Se7en
+            </a>{" "}
+            family of companies.
+          </p>
         </div>
       </div>
     </footer>
