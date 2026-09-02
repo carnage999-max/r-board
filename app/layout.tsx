@@ -101,6 +101,11 @@ gtag('config', '${GA_ID}', { anonymize_ip: true });`}
             </Script>
           </>
         ) : null}
+        <Script
+          src="https://now-hiring-eta.vercel.app/widget.js"
+          data-icon="Layers"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
